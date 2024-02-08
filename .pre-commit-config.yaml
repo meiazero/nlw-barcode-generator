@@ -6,9 +6,10 @@ repos:
         entry: pylint
         language: system
         types: [python]
-        args: [
-            "--rn", # Only display messages
-            "--sn", # Don't display the score
-            "--rcfile=.pylintrc", # Use the .pylintrc file
-            "--load-plugins=pylint.extensions.docparams", # Load the docparams plugin
+        args:
+          [
+            "-rn", # Only display messages
+            "-sn", # Don't display the source
+            "--rcfile=.pylintrc", # Link to your config file
+            "--load-plugins=pylint.extensions.docparams", # Load an extension
           ]
